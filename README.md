@@ -29,20 +29,20 @@ pip install wandb && wandb login
 
 ## Training
 
-### MNIST Dataset
-
-Train $\mathrm{MPS\_\mathrm{\sigma+LSF}}$ and $\mathrm{MPS}\_\mathrm{BM+LSF}$ on MNIST
-```bash
-python scripts/train_mnist.py --model mps_sigma_lsf --rank 8 --pos_func exp
-python scripts/train_mnist.py --model mps_bm_lsf --rank 8
-```
-
 ### UCLA Datasets
 
 Train $\mathrm{MPS\_\mathrm{\sigma+LSF}}$ and $\mathrm{MPS}\_\mathrm{BM+LSF}$ on UCLA density estimation benchmarks
 ```bash
 python scripts/train_ucla.py --dataset nltcs --model mps_sigma_lsf --lr 5e-3  --rank 32 --pos_func abs
 python scripts/train_ucla.py --dataset nltcs --model mps_bm_lsf --lr 5e-3  --rank 32
+```
+
+### MNIST Dataset
+
+Train $\mathrm{MPS\_\mathrm{\sigma+LSF}}$ and $\mathrm{MPS}\_\mathrm{BM+LSF}$ on MNIST
+```bash
+python scripts/train_mnist.py --model mps_sigma_lsf --rank 8 --pos_func exp
+python scripts/train_mnist.py --model mps_bm_lsf --rank 8
 ```
 
 ## Evaluation
