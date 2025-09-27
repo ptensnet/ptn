@@ -1,0 +1,11 @@
+.venv
+.vscode
+*.pyc
+*.egg-info
+wandb
+data
+checkpoints
+media
+data
+scripts/clean.sh
+scripts/setup.sh

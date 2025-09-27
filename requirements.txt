@@ -1,0 +1,12 @@
+torch
+torchvision
+wandb
+opt_einsum
+setuptools
+wheel
+seaborn
+numpy
+scikit-learn
+pandas
+matplotlib
+tqdm

@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ptn" 
+version = "1.0"
+dependencies = [
+    "transformers",
+    "matplotlib",
+    "torch",
+    "tiktoken",
+    "datasets",
+    "lightning",
+    "wandb",
+]
+
+[tool.setuptools.packages.find]
+# This will automatically find all packages with __init__.py files 
